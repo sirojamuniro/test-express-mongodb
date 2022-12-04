@@ -1,0 +1,644 @@
+{
+	"info": {
+		"_postman_id": "fc267fc4-d5bb-4c9e-ac4c-fcdd9201156e",
+		"name": "Express-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8967658"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Pabrik Kelapa Sawit\",\n    \"email\": \"sasa@gmail.com\",\n    \"password\": \"Samsudin\",\n    \"gender\": \"male\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Pabrik Kelapa Sawit\",\n    \"email\": \"sasa@gmail.com\",\n    \"password\": \"Samsudin\",\n    \"gender\": \"male\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "293"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"125-Q00le5b6NnORyQIJCmftzsUiEcA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Dec 2022 21:39:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success\",\n    \"data\": {\n        \"name\": \"Pabrik Kelapa Sawit\",\n        \"email\": \"sasa@gmail.com\",\n        \"password\": \"$2b$10$ff0scE1iq/bcpZ3SiAoCLuFopMoyysn2G8cKIRQ1.g/o2q66b2B06\",\n        \"gender\": \"male\",\n        \"_id\": \"638bc22b3519c5f7cbe2ea21\",\n        \"createdAt\": \"2022-12-03T21:39:55.215Z\",\n        \"updatedAt\": \"2022-12-03T21:39:55.215Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"sasa@gmail.com\",\n    \"password\": \"Samsudin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"sasa@gmail.com\",\n    \"password\": \"Samsudin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "193"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c1-AjE+g9CztTnBlRyrWtdNxOmGBoA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Dec 2022 21:52:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhc2FAZ21haWwuY29tIiwiaWF0IjoxNjcwMTA0MzU2LCJleHAiOjE2NzA1MzYzNTZ9.pG_2X3Mgcxf6TOHgZqH0imBihZkkJAVpH9Idm7_gOAg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "regis schedule",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhc2FAZ21haWwuY29tIiwiaWF0IjoxNjcwMTA0MzU2LCJleHAiOjE2NzA1MzYzNTZ9.pG_2X3Mgcxf6TOHgZqH0imBihZkkJAVpH9Idm7_gOAg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date_start\": \"sasa@gmail.com\",\n    \"date_end\": \"Samsudin\",\n    \"time_start\":\"18:00\",\n    \"duration\":\"15\",\n    \"type\":\"chat\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/register-schedule",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register-schedule"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"sasa@gmail.com\",\n    \"password\": \"Samsudin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "193"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c1-AjE+g9CztTnBlRyrWtdNxOmGBoA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Dec 2022 21:52:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhc2FAZ21haWwuY29tIiwiaWF0IjoxNjcwMTA0MzU2LCJleHAiOjE2NzA1MzYzNTZ9.pG_2X3Mgcxf6TOHgZqH0imBihZkkJAVpH9Idm7_gOAg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET SCHEDULE",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhc2FAZ21haWwuY29tIiwiaWF0IjoxNjcwMTA1NTg0LCJleHAiOjE2NzA1Mzc1ODR9.Op8oCdwwIoF6lMIJNoLk9zOmlj0jlYtcNPqjEyUYzfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"date_start\": \"2016-12-13T06:55:24.698Z\",\n    \"date_end\": \"2022-12-13T06:55:24.698Z\",\n    \"time_start\":\"2022-12-13T06:55:00Z\",\n    \"duration\":\"15\",\n    \"type\":\"chat\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/schedule",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"schedule"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"sasa@gmail.com\",\n    \"password\": \"Samsudin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "193"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c1-AjE+g9CztTnBlRyrWtdNxOmGBoA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Dec 2022 21:52:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhc2FAZ21haWwuY29tIiwiaWF0IjoxNjcwMTA0MzU2LCJleHAiOjE2NzA1MzYzNTZ9.pG_2X3Mgcxf6TOHgZqH0imBihZkkJAVpH9Idm7_gOAg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "POST DURATION",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhc2FAZ21haWwuY29tIiwiaWF0IjoxNjcwMTA1NTg0LCJleHAiOjE2NzA1Mzc1ODR9.Op8oCdwwIoF6lMIJNoLk9zOmlj0jlYtcNPqjEyUYzfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"15 Minutes\",\n    \"time\":15,\n    \"type\": \"minutes\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/duration",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"duration"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST DURATION",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"15 Minutes\",\n    \"time\":15,\n    \"type\": \"minutes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/duration",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"duration"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "201"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c9-bDg3DJPnVkfMRtTMxghe+yABjGQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Dec 2022 00:57:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success\",\n    \"data\": {\n        \"name\": \"15 Minutes\",\n        \"time\": 15,\n        \"type_time\": \"minutes\",\n        \"_id\": \"638bf07685ecf65503522731\",\n        \"createdAt\": \"2022-12-04T00:57:26.948Z\",\n        \"updatedAt\": \"2022-12-04T00:57:26.948Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET DURATION",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhc2FAZ21haWwuY29tIiwiaWF0IjoxNjcwMTA1NTg0LCJleHAiOjE2NzA1Mzc1ODR9.Op8oCdwwIoF6lMIJNoLk9zOmlj0jlYtcNPqjEyUYzfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"15 Minutes\",\n    \"time\":15,\n    \"type\": \"minutes\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/duration",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"duration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST CONSULTATION",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhc2FAZ21haWwuY29tIiwiaWF0IjoxNjcwMTA1NTg0LCJleHAiOjE2NzA1Mzc1ODR9.Op8oCdwwIoF6lMIJNoLk9zOmlj0jlYtcNPqjEyUYzfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Video\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/consultation",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"consultation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CONSULTATION",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhc2FAZ21haWwuY29tIiwiaWF0IjoxNjcwMTA1NTg0LCJleHAiOjE2NzA1Mzc1ODR9.Op8oCdwwIoF6lMIJNoLk9zOmlj0jlYtcNPqjEyUYzfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Video\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/consultation",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"consultation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
