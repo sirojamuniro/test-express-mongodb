@@ -12,12 +12,12 @@ class CronService {
               if(checkSchedule.length > 0){
               
                     await checkSchedule.forEach(async (schedule) => {
-                  
+                        const id = schedule._id
                        let newDate = moment(schedule.time_start);
                        let timeNow = moment.now()
                        let dateNow = moment(timeNow)
                        let subtractDateNow = dateNow.subtract(10, 'minutes')
-          
+                        console.log(schedule._id)
                        if(subtractDateNow ==  newDate){
                         //notification before 10 minute
                         console.log("10 Menit lagi ada schedule yang harus dilakukan ")
@@ -26,7 +26,7 @@ class CronService {
                         if(subtractDateNow >= dateNow ){
                             //notification
                             console.log("Ada schedule yang harus dilakukan ")
-                            Schedule.findByIdAndUpdate(schedule._id,{active:true})
+                            await Schedule.findByIdAndUpdate(id,{active:true})
                         }
         
                  
@@ -52,7 +52,7 @@ class CronService {
                             if(dateNow > newDate ){
                                 //notification
                                 console.log("Schedule Telah Berakhir ")
-                                Schedule.findByIdAndUpdate(schedule._id,{active:false})
+                                await Schedule.findByIdAndUpdate(schedule._id,{active:false})
                             }
             
                      

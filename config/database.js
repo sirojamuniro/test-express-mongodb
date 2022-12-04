@@ -1,3 +1,4 @@
 module.exports = {
-  url : "mongodb+srv://siroja:SI2kAnz5lsMuT5Ux@cluster0.slhcal7.mongodb.net/express-test"
+  // url : "mongodb+srv://siroja:SI2kAnz5lsMuT5Ux@cluster0.slhcal7.mongodb.net/express-test"
+  url: process.env.URI_SECRET
 };
