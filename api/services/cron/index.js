@@ -17,10 +17,7 @@ class CronService {
                        let timeNow = moment.now()
                        let dateNow = moment(timeNow)
                        let subtractDateNow = dateNow.subtract(10, 'minutes')
-                       console.log('ini subtract',subtractDateNow)
-                       console.log('ini newDate',newDate)
-                       console.log('ini timeNow',timeNow)
-                       console.log('ini timeNow',dateNow)
+          
                        if(subtractDateNow ==  newDate){
                         //notification before 10 minute
                         console.log("10 Menit lagi ada schedule yang harus dilakukan ")
